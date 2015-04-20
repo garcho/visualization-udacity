@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['geochart']});
+      google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country', '%'],
+        
+  ['Colombia',0.3501157],
+  ['United States',0.1124060],
+  ['Venezuela',0.0878832],
+  ['Spain',0.0357143],
+  ['England',0.0423077],
+  ['Peru',0.0311163],
+  ['Mexico',0.0276171],
+  ['Brasil',0.0328803],
+  ['France',0.0292076],
+  ['Germany',0.0249566],
+  ['Argentina',0.0271544],
+  ['Ecuador',0.0246674],
+  ['Canada',0.0210816],
+  ['Italy',0.0164257],
+  ['Switzerland',0.0141411],
+  ['Chile',0.0124639],
+  ['Australia',0.0107866],
+  ['Netherlands',0.0093696],
+  ['Belgium',0.0074610],
+  ['Costa Rica',0.0058126],
+  ['Honduras',0.0033256],
+  ['Japan',0.0039040],
+  ['Russia',0.0032389],
+  ['El Salvador',0.0032967],
+  ['China',0.0045113],
+  ['Sweden',0.0040486],
+  ['Guatemala',0.0027473],
+  ['India',0.0031810],
+  ['Panama',0.0038462],
+  ['Portugal',0.0024291],
+  ['Norway',0.0029786],
+  ['New Zealand',0.0029208],
+  ['Austria',0.0024870],
+  ['Uruguay',0.0019665],
+  ['South Korea',0.0023424],
+  ['Poland',0.0015905],
+  ['Paraguay',0.0015905],
+  ['Dominican Republic',0.0019375],
+  ['Netherlands (Holland )',0.0024581],
+  ['Ireland',0.0019086],
+  ['Bolivia',0.0015905],
+  ['Denmark',0.0014748],
+  ['Lithuania',0.0013881],
+  ['Israel',0.0012146],
+  ['Uzbekistand',0.0008386],
+  ['Indonesia',0.0010121],
+  ['Romania',0.0007519],
+  ['Puerto Rico',0.0020821],
+  ['Malaysia',0.0004916],
+  ['Finland',0.0005784],
+  ['Philippines',0.0008676],
+  ['Guayana',0.0006073],
+  ['Cuba',0.0004627],
+  ['Nicaragua',0.0003470],
+  ['Czech Republic',0.0004338],
+  ['South Africa',0.0006073],
+  ['Iran',0.0002892],
+  ['Nepal',0.0004338],
+  ['Suriname',0.0002892],
+  ['Oman',0.0002603],
+  ['Trinidad And Tobago',0.0002603],
+  ['Singapore',0.0002892],
+  ['North Korea',0.0001446],
+  ['Greece',0.0002603],
+  ['Iceland',0.0003470],
+  ['Turkey',0.0002892],
+  ['Saudi Arabia',0.0002313],
+  ['Luxembourg',0.0001446],
+  ['Estonia',0.0002024],
+  ['Andorra',0.0000868],
+  ['Jamaica',0.0000868],
+  ['Aruba',0.0000578],
+  ['Bulgaria',0.0000578],
+  ['Slovenia',0.0000578],
+  ['Slovakia',0.0002892],
+  ['Thailand',0.0000578],
+  ['Latvia',0.0001157],
+  ['Madagascar',0.0000578],
+  ['Moldova',0.0000289],
+  ['Suaziland',0.0000289],
+  ['Vietnam',0.0000289],
+  ['Albania',0.0000578],
+  ['Egypt',0.0000289],
+  ['Hungary',0.0001157],
+  ['Channel Islands',0.0000578],
+  ['Europa Island',0.0000289],
+  ['Morocco',0.0000578],
+  ['Pakistan',0.0000578],
+  ['Ukraine',0.0000868]
+
+        ]);
+
+        var options = {};
+
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id='regions_div' style='width: 900px; height: 500px;'></div>
+
+  </body>
+</html>
